@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutChat"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/default_image"
+            android:id="@+id/messageImage"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/chatMessage"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Hello, how are you"
+                android:background="@drawable/bg_receiver"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:lineSpacingExtra="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageTime"
+                android:text="15:30"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageIsSeen"
+        android:text="Delivered"
+        android:layout_gravity="end"
+        android:textAlignment="textEnd"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>

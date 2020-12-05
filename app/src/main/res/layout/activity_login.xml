@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.LoginActivity">
+
+ <include layout="@layout/toolbar_layout"/>
+
+ <de.hdodenhof.circleimageview.CircleImageView
+     android:id="@+id/loginImageView"
+     android:layout_width="@dimen/_90sdp"
+     android:layout_height="@dimen/_90sdp"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="@dimen/_60sdp"
+     android:scaleType="centerCrop"
+     android:src="@drawable/default_image" />
+
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/regEmailTextInput"
+     android:layout_below="@id/loginImageView"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="@dimen/_30sdp">
+
+  <EditText
+      android:id="@+id/loginEmail"
+      android:layout_width="@dimen/_265sdp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_8sdp"
+      android:layout_marginEnd="@dimen/_8sdp"
+      android:layout_marginBottom="@dimen/_8sdp"
+      android:ems="10"
+      android:hint="Email"
+      android:inputType="textEmailAddress"
+      android:background="@drawable/reg_edittext_style"
+      android:layout_below="@id/loginImageView"
+      android:layout_centerHorizontal="true" />
+ </com.google.android.material.textfield.TextInputLayout>
+
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/regPasswordTextInput"
+     android:layout_below="@id/regEmailTextInput"
+     android:layout_centerHorizontal="true"
+     app:passwordToggleEnabled="true">
+
+  <EditText
+      android:id="@+id/loginPassword"
+      android:layout_width="@dimen/_265sdp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_8sdp"
+      android:layout_marginTop="@dimen/_8sdp"
+      android:layout_marginEnd="@dimen/_8sdp"
+      android:ems="10"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:background="@drawable/reg_edittext_style"
+      />
+ </com.google.android.material.textfield.TextInputLayout>
+
+
+
+ <Button
+     android:id="@+id/loginButton"
+     android:layout_width="@dimen/_160sdp"
+     android:layout_height="wrap_content"
+     android:background="@drawable/reg_button_style"
+     android:text="login"
+     android:textSize="@dimen/_13ssp"
+     android:textColor="@color/white"
+     android:layout_below="@id/regPasswordTextInput"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="@dimen/_30sdp" />
+
+ <TextView
+     android:id="@+id/loginForgotPassword"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Forgot password? Recover"
+     android:textSize="@dimen/_13ssp"
+     android:layout_below="@id/loginButton"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="@dimen/_10sdp"/>
+
+ <com.google.android.gms.common.SignInButton
+     android:id="@+id/googleSignInBtn"
+     android:layout_width="@dimen/_150sdp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/_10sdp"
+     android:layout_below="@id/loginForgotPassword"
+     android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_logout"
+        android:title="Log out"/>
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item android:id="@+id/action_add_post"
+        android:title="Add Post"
+        android:icon="@drawable/ic_add_post"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_save"
+        android:title="Save"
+        app:showAsAction="always" />
+
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "958989668159",
+    "firebase_url": "https://slicker-hash.firebaseio.com",
+    "project_id": "slicker-hash",
+    "storage_bucket": "slicker-hash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958989668159:android:6b92613ba2a5d286aa0d8a",
+        "android_client_info": {
+          "package_name": "com.codemountain.slicker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958989668159-fjov13fqnas3npmfml9e76b7s522b97i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codemountain.slicker",
+            "certificate_hash": "c74be73779be4010a654517f8b280fd2f0c672ce"
+          }
+        },
+        {
+          "client_id": "958989668159-19g8t7so4kn835k3j12d5eqvpieo0cn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvWtnjT2-rsz1TLMhOhs6F7BG0nb-rr6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958989668159-19g8t7so4kn835k3j12d5eqvpieo0cn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

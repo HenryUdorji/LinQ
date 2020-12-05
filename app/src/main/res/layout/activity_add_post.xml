@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddPostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_layout"
+            android:id="@+id/include"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postImage"
+            android:background="@drawable/cover_default"
+            android:layout_below="@id/include"
+            android:minHeight="200dp"
+            android:src="@drawable/ic_camera_white"/>
+
+        <EditText
+            android:id="@+id/postDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Post Description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:gravity="start"
+            android:minHeight="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/post_edittext_style"
+            android:textSize="@dimen/_15ssp"
+            android:padding="5dp"
+            android:layout_below="@id/postImage"/>
+
+        <Button
+            android:id="@+id/sendPostButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/reg_button_style"
+            android:layout_gravity="center_horizontal"
+            android:text="Upload Post"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_below="@id/postDescription"/>
+
+    </RelativeLayout>
+
+</ScrollView>

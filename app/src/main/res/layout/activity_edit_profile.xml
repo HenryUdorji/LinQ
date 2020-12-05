@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.EditProfileActivity">
+
+        <include layout="@layout/toolbar_layout"
+            android:id="@+id/toolbar_layout"/>
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Name"
+            android:textSize="@dimen/_15ssp"
+            android:layout_below="@id/toolbar_layout"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/text"
+            android:layout_below="@id/nameText"/>
+
+        <TextView
+            android:id="@+id/bioText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Bio"
+            android:textSize="@dimen/_15ssp"
+            android:layout_below="@id/editName"/>
+
+        <EditText
+            android:id="@+id/editBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/text"
+            android:layout_below="@id/bioText"/>
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Location"
+            android:textSize="@dimen/_15ssp"
+            android:layout_below="@id/editBio"/>
+
+        <EditText
+            android:id="@+id/editLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/text"
+            android:layout_below="@id/locationText"/>
+
+        <TextView
+            android:id="@+id/phoneNumberText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Phone Number"
+            android:textSize="@dimen/_15ssp"
+            android:layout_below="@id/editLocation"/>
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_below="@id/phoneNumberText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ccp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/editPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/text"
+                android:inputType="number|numberDecimal|phone"
+                android:singleLine="true"
+                android:ems="10"
+                android:maxLength="10"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/dobText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Date of birth"
+            android:textSize="@dimen/_15ssp"
+            android:layout_below="@id/linear"/>
+
+        <EditText
+            android:id="@+id/editDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_18ssp"
+            android:focusable="false"
+            android:longClickable="false"
+            android:textColor="@color/text"
+            android:layout_below="@id/dobText"/>
+
+    </RelativeLayout>
+</ScrollView>
